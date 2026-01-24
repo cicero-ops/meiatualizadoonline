@@ -5,30 +5,62 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Perola de Moura Nunes</title>
 <meta name="description" content="Site institucional da empresa Perola de Moura Nunes. Informações oficiais, contato e serviços.">
+
 <style>
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f5f5f5;
+    background: #f4f6f8;
     color: #333;
 }
+
+nav {
+    background: #111827;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
 header {
     background: #1f2937;
     color: #fff;
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
 }
+
 section {
-    padding: 30px;
+    padding: 40px 20px;
     max-width: 1000px;
     margin: auto;
     background: #fff;
     margin-top: 20px;
 }
+
 h2 {
     color: #1f2937;
 }
+
 footer {
     background: #111827;
     color: #fff;
@@ -37,59 +69,68 @@ footer {
     margin-top: 40px;
     font-size: 14px;
 }
-a {
-    color: #2563eb;
-    text-decoration: none;
-}
 </style>
 </head>
 
 <body>
 
+<nav>
+    <ul>
+        <li><a href="#quem-somos">Quem Somos</a></li>
+        <li><a href="#servicos">O Que Fazemos</a></li>
+        <li><a href="#atendimento">Atendimento</a></li>
+        <li><a href="#entrega">Entrega</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#privacidade">Privacidade</a></li>
+    </ul>
+</nav>
+
 <header>
     <h1>Perola de Moura Nunes</h1>
-    <p>Empresa registrada e em atividade no Brasil</p>
+    <p>Empresa legalmente registrada e em atividade no Brasil</p>
 </header>
 
-<section>
+<section id="quem-somos">
     <h2>Quem Somos</h2>
     <p>
         A <strong>Perola de Moura Nunes</strong> é uma empresa brasileira legalmente registrada,
         atuando de forma transparente e responsável na oferta de produtos e serviços ao público.
-        Nosso compromisso é oferecer soluções claras, atendimento acessível e informações verdadeiras,
-        sempre respeitando as normas legais e as diretrizes das plataformas de publicidade.
+        Nosso compromisso é fornecer informações claras, atendimento acessível e práticas comerciais éticas,
+        respeitando integralmente as políticas do Google Ads.
     </p>
 </section>
 
-<section>
+<section id="servicos">
     <h2>O Que Fazemos</h2>
     <p>
-        A empresa <strong>Perola de Moura Nunes</strong> atua na divulgação e comercialização de produtos
-        e serviços por meio de canais digitais, incluindo anúncios online.
-        Todo o processo de atendimento é realizado de forma direta, com informações claras sobre
-        prazos, condições e formas de entrega ou prestação do serviço.
+        A <strong>Perola de Moura Nunes</strong> atua na divulgação e comercialização de produtos
+        e serviços por meio de canais digitais e presenciais.
+        Os anúncios publicados têm caráter informativo e direcionam os usuários
+        para canais oficiais de atendimento e contratação.
     </p>
 </section>
 
-<section>
+<section id="atendimento">
     <h2>Atendimento ao Público</h2>
     <p>
-        Interagimos com nossos clientes por meio de canais oficiais, como telefone, e-mail e páginas informativas.
-        Todas as dúvidas são respondidas com clareza, garantindo transparência antes, durante e após a contratação.
+        A interação com o público-alvo ocorre através de canais oficiais,
+        como telefone, e-mail e formulários de contato.
+        Nosso atendimento é realizado de forma direta, com esclarecimento prévio
+        sobre valores, prazos e condições.
     </p>
 </section>
 
-<section>
+<section id="entrega">
     <h2>Entrega de Produtos e Serviços</h2>
     <p>
-        Os produtos ou serviços anunciados são entregues conforme o tipo de contratação realizada.
-        Quando se trata de serviços digitais, o acesso é fornecido após a confirmação.
-        Produtos físicos, quando aplicável, são enviados para o endereço informado pelo cliente,
-        respeitando prazos e condições acordadas.
+        Os produtos ou serviços anunciados são entregues conforme a natureza da contratação.
+        Serviços digitais são disponibilizados após confirmação.
+        Produtos físicos, quando aplicável, são enviados ao endereço informado pelo cliente,
+        respeitando os prazos acordados.
     </p>
 </section>
 
-<section>
+<section id="contato">
     <h2>Contato</h2>
     <p><strong>Empresa:</strong> Perola de Moura Nunes</p>
     <p><strong>CNPJ:</strong> 37.860.027/0001-64</p>
@@ -98,22 +139,22 @@ a {
     <p><strong>E-mail:</strong> contato@perolademouranunes.com</p>
 </section>
 
-<section>
+<section id="privacidade">
     <h2>Política de Privacidade</h2>
     <p>
         A <strong>Perola de Moura Nunes</strong> respeita a privacidade dos usuários.
-        As informações coletadas são utilizadas apenas para fins de atendimento,
-        comunicação e cumprimento de obrigações legais.
-        Não compartilhamos dados pessoais com terceiros sem autorização.
+        As informações coletadas são utilizadas exclusivamente para atendimento,
+        comunicação e cumprimento de obrigações legais,
+        em conformidade com a legislação vigente.
     </p>
 </section>
 
 <section>
     <h2>Termos de Uso</h2>
     <p>
-        Ao acessar este site, o usuário concorda com os termos aqui descritos.
-        Todo o conteúdo tem caráter informativo e pode ser atualizado sem aviso prévio.
-        O uso indevido das informações é de responsabilidade do usuário.
+        Ao utilizar este site, o usuário concorda com os termos aqui descritos.
+        O conteúdo é informativo e pode ser alterado sem aviso prévio.
+        O uso inadequado das informações é de responsabilidade do usuário.
     </p>
 </section>
 
